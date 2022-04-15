@@ -1,8 +1,12 @@
-## Welcome to GitHub Pages
+## GEOS 472 Final Project
+**Kean Wah Wong, Jamie Lee, Emily Clark, Simen Hennum**
 
-You can use the [editor on GitHub](https://github.com/UBC-GEOS472-Spring2022/antarctic_expedition_public/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+
+[Name of the map](https://github.com/UBC-GEOS472-Spring2022/antarctic_expedition_public/edit/main/README.md) ->inset link to map here
+
+Can add anything [name of the link](https://jekyllrb.com/) ->insert link here
 
 ### Markdown
 
