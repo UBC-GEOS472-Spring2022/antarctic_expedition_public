@@ -1,7 +1,7 @@
 ## GEOS 472 Final Project
 **Kean Wah Wong, Jamie Lee, Emily Clark, Simen Hennum**
 
-
+This is where we will host our maps for final project. The submission can be found in our private repository.
 
 
 [Name of the map](https://github.com/UBC-GEOS472-Spring2022/antarctic_expedition_public/edit/main/README.md) ->inset link to map here
