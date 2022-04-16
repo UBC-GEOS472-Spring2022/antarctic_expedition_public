@@ -1,0 +1,673 @@
+{
+  "CAMERA": "PERSPECTIVE",
+  "KEYFRAMES": {
+    "camera": {
+      "groups": [
+        {
+          "enabled": true,
+          "keyframes": [
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": -106701.44443187298,
+                "y": 107254.80516011738,
+                "z": 18081.55111896313
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 3,
+              "name": "Overview",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": -91750.23242167095,
+                "y": 93782.99339851241,
+                "z": 610.8601688111044
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Cape Demidov",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": -69312.50371831737,
+                "y": 89859.87583357151,
+                "z": 472.6719541040643
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Rounding bluffs",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": -51698.91448625268,
+                "y": 86977.5196499822,
+                "z": 2605.785847560175
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Coming in to cover",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": -36332.709230170265,
+                "y": 97655.82458183565,
+                "z": 3385.3390396080117
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Looking ahead",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": -25969.954302143058,
+                "y": 111793.50136650598,
+                "z": 3385.339039607944
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "View east, pan",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": -13940.446228064568,
+                "y": 120001.68501951659,
+                "z": 3778.2968571635465
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Panning",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": 9307.415963714528,
+                "y": 124627.91224475049,
+                "z": 4639.179238046881
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Whistle Cove",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": 26782.227456766166,
+                "y": 121239.70047494367,
+                "z": 2754.8066867510133
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Rounding Stromness",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": 42218.801862239015,
+                "y": 110500.15280612258,
+                "z": 3227.9020884816946
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Rounding Stromness 2",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": 49044.38079316718,
+                "y": 90919.5137174465,
+                "z": 2414.9561642619915
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 3,
+              "name": "Stromness",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": 49694.61284012468,
+                "y": 99520.07029092101,
+                "z": 12671.994149234932
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Zoom out",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": 19929.64941741316,
+                "y": 119649.06196153098,
+                "z": 15311.285083477596
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Pan south",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": -29475.229774471947,
+                "y": 112583.52339671837,
+                "z": 8545.304620403365
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Overview of route",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": -48201.567654982005,
+                "y": 130920.12585383782,
+                "z": 12880.677497072778
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Zoom out",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": 7435.611845336431,
+                "fy": 76440.8758882302,
+                "fz": 0.0,
+                "x": -67917.489171578,
+                "y": 106269.63894331087,
+                "z": 6310.445555554072
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "Cape Demidov to Stromness",
+              "type": 128
+            }
+          ],
+          "name": "Group 2",
+          "type": 64
+        }
+      ]
+    },
+    "enabled": true,
+    "layers": {
+      "Shackleton_route_c9188186_e6dd_4117_86b7_08cc781dd36a": {
+        "enabled": true,
+        "groups": []
+      },
+      "SouthGeorgia_poi_6ae4ebc6_7fd2_4c25_8caa_d69a241d3416": {
+        "enabled": true,
+        "groups": []
+      },
+      "buffered_mask_e5eed81f_b5e1_476a_a6f3_6af6ef545a4a": {
+        "enabled": true,
+        "groups": []
+      },
+      "fp:e33e7ccc": {
+        "enabled": true,
+        "groups": []
+      },
+      "mask_cc7d1356_a99d_4fea_a1fa_ede2d0714632": {
+        "enabled": true,
+        "groups": []
+      },
+      "sg_dem_54ada318_1438_44fd_9ac0_8c62e40ec03a": {
+        "enabled": true,
+        "groups": []
+      }
+    },
+    "startOnLoad": true
+  },
+  "LAYERS": [
+    {
+      "geomType": 3,
+      "layerId": "buffered_mask_e5eed81f_b5e1_476a_a6f3_6af6ef545a4a",
+      "name": "buffered_mask",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 3,
+      "layerId": "mask_cc7d1356_a99d_4fea_a1fa_ede2d0714632",
+      "name": "mask",
+      "properties": {
+        "checkBox_Clickable": true,
+        "checkBox_Clip": true,
+        "checkBox_ExportAttrs": false,
+        "checkBox_Label": false,
+        "checkBox_Outline": true,
+        "checkBox_Underline": false,
+        "checkBox_Visible": true,
+        "colorButton_BgColor": [
+          255,
+          255,
+          255,
+          176
+        ],
+        "colorButton_ConnColor": [
+          192,
+          192,
+          208,
+          255
+        ],
+        "colorButton_Label": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "colorButton_OtlColor": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "comboBox_FontFamily": "sans-serif",
+        "comboBox_ObjectType": "Polygon",
+        "comboBox_altitudeMode": null,
+        "comboEdit_Color": {
+          "comboData": 1,
+          "comboText": "Feature style",
+          "editText": "",
+          "type": 2
+        },
+        "comboEdit_Color2": {
+          "comboData": null,
+          "comboText": "None",
+          "editText": "",
+          "type": 7
+        },
+        "comboEdit_FilePath": {},
+        "comboEdit_Opacity": {
+          "comboData": 1,
+          "comboText": "Feature style",
+          "editText": "",
+          "type": 5
+        },
+        "comboEdit_altitude2": {},
+        "expression_Label": "\"OBJECTID\"",
+        "fieldExpressionWidget_altitude": "0",
+        "geomWidget0": {},
+        "geomWidget1": {},
+        "geomWidget2": {},
+        "geomWidget3": {},
+        "geomWidget4": {},
+        "groupBox_Background": true,
+        "groupBox_Conn": true,
+        "labelHeightWidget": {
+          "comboData": 1,
+          "comboText": "Relative",
+          "editText": "50",
+          "type": 6
+        },
+        "lineEdit_Name": "",
+        "mtlWidget0": {},
+        "mtlWidget1": {},
+        "radioButton_Expression": true,
+        "radioButton_IntersectingFeatures": true,
+        "slider_FontSize": 3
+      },
+      "visible": false
+    },
+    {
+      "geomType": 1,
+      "layerId": "SouthGeorgia_poi_6ae4ebc6_7fd2_4c25_8caa_d69a241d3416",
+      "name": "SouthGeorgia_poi",
+      "properties": {
+        "checkBox_Clickable": true,
+        "checkBox_Clip": true,
+        "checkBox_ExportAttrs": false,
+        "checkBox_Label": true,
+        "checkBox_Outline": false,
+        "checkBox_Underline": false,
+        "checkBox_Visible": true,
+        "colorButton_BgColor": [
+          255,
+          255,
+          255,
+          190
+        ],
+        "colorButton_ConnColor": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "colorButton_Label": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "colorButton_OtlColor": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "comboBox_FontFamily": "serif",
+        "comboBox_ObjectType": "Sphere",
+        "comboBox_altitudeMode": "sg_dem_54ada318_1438_44fd_9ac0_8c62e40ec03a",
+        "comboEdit_Color": {
+          "comboData": 1,
+          "comboText": "Feature style",
+          "editText": "",
+          "type": 2
+        },
+        "comboEdit_Color2": {
+          "comboData": null,
+          "comboText": "None",
+          "editText": "",
+          "type": 7
+        },
+        "comboEdit_FilePath": {},
+        "comboEdit_Opacity": {
+          "comboData": 1,
+          "comboText": "Feature style",
+          "editText": "",
+          "type": 5
+        },
+        "comboEdit_altitude2": {},
+        "expression_Label": "\"name\"",
+        "fieldExpressionWidget_altitude": "",
+        "geomWidget0": {
+          "comboData": null,
+          "comboText": "Expression",
+          "editText": "0",
+          "type": 1
+        },
+        "geomWidget1": {},
+        "geomWidget2": {},
+        "geomWidget3": {},
+        "geomWidget4": {},
+        "groupBox_Background": true,
+        "groupBox_Conn": true,
+        "labelHeightWidget": {
+          "comboData": 1,
+          "comboText": "Relative",
+          "editText": "1000",
+          "type": 6
+        },
+        "lineEdit_Name": "",
+        "mtlWidget0": {},
+        "mtlWidget1": {},
+        "radioButton_Expression": true,
+        "radioButton_IntersectingFeatures": true,
+        "slider_FontSize": 0
+      },
+      "visible": true
+    },
+    {
+      "geomType": 2,
+      "layerId": "Shackleton_route_c9188186_e6dd_4117_86b7_08cc781dd36a",
+      "name": "Shackleton_route",
+      "properties": {
+        "checkBox_Clickable": true,
+        "checkBox_Clip": true,
+        "checkBox_ExportAttrs": false,
+        "checkBox_Visible": true,
+        "comboBox_ObjectType": "Thick Line",
+        "comboBox_altitudeMode": "sg_dem_54ada318_1438_44fd_9ac0_8c62e40ec03a",
+        "comboEdit_Color": {
+          "comboData": 1,
+          "comboText": "Feature style",
+          "editText": "",
+          "type": 2
+        },
+        "comboEdit_Color2": {
+          "comboData": null,
+          "comboText": "None",
+          "editText": "",
+          "type": 7
+        },
+        "comboEdit_FilePath": {},
+        "comboEdit_Opacity": {
+          "comboData": 1,
+          "comboText": "Feature style",
+          "editText": "100",
+          "type": 5
+        },
+        "comboEdit_altitude2": {},
+        "fieldExpressionWidget_altitude": "150",
+        "geomWidget0": {},
+        "geomWidget1": {},
+        "geomWidget2": {},
+        "geomWidget3": {},
+        "geomWidget4": {},
+        "lineEdit_Name": "",
+        "mtlWidget0": {
+          "comboData": null,
+          "comboText": "Expression",
+          "editText": "25",
+          "type": 1
+        },
+        "mtlWidget1": {
+          "checkBox": false,
+          "type": 9
+        },
+        "radioButton_AllFeatures": true,
+        "radioButton_Expression": true
+      },
+      "visible": true
+    },
+    {
+      "geomType": 0,
+      "layerId": "sg_dem_54ada318_1438_44fd_9ac0_8c62e40ec03a",
+      "name": "sg_dem",
+      "properties": {
+        "checkBox_Clickable": true,
+        "checkBox_Clip": false,
+        "checkBox_Frame": false,
+        "checkBox_Sides": false,
+        "checkBox_Tiles": false,
+        "checkBox_Visible": true,
+        "checkBox_Wireframe": false,
+        "colorButton_Edge": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "colorButton_Side": [
+          204,
+          187,
+          170,
+          255
+        ],
+        "colorButton_Wireframe": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "comboBox_ClipLayer": "mask_cc7d1356_a99d_4fea_a1fa_ede2d0714632",
+        "horizontalSlider_DEMSize": 2,
+        "lineEdit_Bottom": "0",
+        "lineEdit_Name": "",
+        "materials": [
+          {
+            "id": "b2251b89",
+            "name": "map (canvas)",
+            "properties": {
+              "checkBox_Shading": true,
+              "checkBox_TransparentBackground": true,
+              "comboBox_TextureSize": "4096",
+              "spinBox_Opacity": 100
+            },
+            "type": 0
+          }
+        ],
+        "mtlId": "b2251b89",
+        "spinBox_Roughening": 1,
+        "spinBox_Size": 3
+      },
+      "visible": true
+    },
+    {
+      "geomType": 0,
+      "layerId": "fp:e33e7ccc",
+      "name": "Flat Plane",
+      "properties": {
+        "checkBox_Clickable": true,
+        "checkBox_Frame": false,
+        "checkBox_Sides": false,
+        "checkBox_Tiles": false,
+        "checkBox_Visible": true,
+        "checkBox_Wireframe": false,
+        "colorButton_Edge": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "colorButton_Side": [
+          204,
+          187,
+          170,
+          255
+        ],
+        "colorButton_Wireframe": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "lineEdit_Altitude": "0",
+        "lineEdit_Bottom": "0",
+        "lineEdit_Name": "",
+        "materials": [
+          {
+            "id": "1bb52bf9",
+            "name": "map (canvas)",
+            "properties": {},
+            "type": 0
+          }
+        ],
+        "mtlId": "1bb52bf9",
+        "spinBox_Size": 3
+      },
+      "visible": false
+    }
+  ],
+  "OPT": {
+    "animation.enabled": true,
+    "animation.startOnLoad": true,
+    "localMode": true,
+    "viewpoint": {
+      "lookAt": {
+        "x": 7435.611845336431,
+        "y": 76440.8758882302,
+        "z": 0.0
+      },
+      "pos": {
+        "x": -67917.48917157802,
+        "y": 106269.63894331089,
+        "z": 3155.2227777770395
+      }
+    }
+  },
+  "OutputFilename": "H:/Shackleton/South Georgia\\rescue_route.html",
+  "SCENE": {
+    "checkBox_FixAspectRatio": false,
+    "checkBox_Outline": false,
+    "colorButton_Color": [
+      191,
+      198,
+      200,
+      255
+    ],
+    "colorButton_Fog": [
+      193,
+      199,
+      206,
+      255
+    ],
+    "comboBox_MaterialType": 0,
+    "comboBox_xyShift": true,
+    "groupBox_Fog": false,
+    "lineEdit_CenterX": "7457.973179946777",
+    "lineEdit_CenterY": "76394.55169095838",
+    "lineEdit_Height": "154113.49903650035",
+    "lineEdit_Rotation": "0",
+    "lineEdit_Width": "179258.87028184463",
+    "lineEdit_zFactor": "2",
+    "radioButton_FixedExtent": true,
+    "slider_Fog": 16
+  },
+  "Template": "3DViewer(dat-gui).html",
+  "Title": "3D_visualization",
+  "Version": 20700,
+  "WIDGETS": {
+    "Label": {
+      "Footer": "",
+      "Header": "Rescue route on South Georgia May 1915"
+    },
+    "NorthArrow": {
+      "color": "0xb40300",
+      "visible": true
+    }
+  }
+}

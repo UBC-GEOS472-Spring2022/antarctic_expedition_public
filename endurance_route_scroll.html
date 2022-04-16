@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Endurance Voyage, 1914-1916</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+<style>
+	body { margin: 0; padding: 0; }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+
+<body>
+<style>
+
+/* Set custom fonts */
+@font-face {
+	font-family:"Century Gothic";
+	src:url("../emilyec-lab2/fonts/GOTHIC.TTF") format('truetype');
+}
+
+@font-face {
+	font-family:"Reenie Beanie";
+	src:url("../emilyec-lab2/fonts/REENIEBEANIE-REGULAR.TTF") format('truetype');
+}
+
+
+/* position map to the left of the screen and the scroll element on the right of the screen */
+
+#map {
+		position: fixed;
+		width: 70%;
+}
+
+#features {
+		width: 30%;
+		height: 3000px;
+		margin-left: 70%;
+		font-family: sans-serif;
+		overflow-y: scroll;
+		background-color: #fafafa;
+}
+
+
+.mapboxgl-popup {
+max-width: 400px;
+font-size: 18px;
+font-family: "Reenie Beanie";
+}
+
+section {
+		padding: 25px 50px;
+		line-height: 25px;
+		border-bottom: 1px solid #ddd;
+		opacity: 0.25;
+		font-size: 13px;
+}
+section.active {
+		opacity: 1;
+}
+section:last-child {
+		border-bottom: none;
+		margin-bottom: 200px;
+}
+
+
+/* Story chapters - text elements for the scroll feature on the right side of the screen */
+
+</style>
+
+
+
+<div id="map"></div>
+<div class='map-overlay' id='legend'></div>
+
+<div id="features">
+    <section id="initial" class="active">
+			<h1>The Endurance Voyage of 1914-1917</h1>
+			<p>
+    </section>
+    <section id="grytviken">
+        <h3>Departing Grytviken</h3>
+        <p>
+            On December 5th, 1914, Shackleton and his crew left Grytviken whaling station on South Georgia Island.
+						They arrived here a month prior after departing from Plymouth, United Kingdom on August 8th, 1915
+						after a brief stop in Buenos Aires.
+        </p>
+    </section>
+    <section id="first_ice">
+        <h3>Entering pack ice</h3>
+        <p>
+            Two days later, on December 7th, the <i>Endurance</i> first encounters pack ice.
+						The crew is now sailing in the Weddel Sea, on their way to the Antarctic continent.
+        </p>
+    </section>
+    <section id="still_drift">
+        <h3>Still drifting in pack ice</h3>
+        <p>
+            During the month of December 1915 and early January, 1916, <i>Endurance</i> remains stuck in pack ice and maintains its
+						soutbound drift towards the Antarctic shore.
+        </p>
+    </section>
+    <section id="stuck">
+        <h3><i>Endurance</i> becomes immobilized and stuck in sea ice</h3>
+        <p>
+          On January 18, 1915, <i>Endurance</i> is stuck in the sea ice and begins drifting with the ice, not too far from the coastline.
+        </p>
+    </section>
+    <section id="abandon">
+        <h3>Drifting in sea ice</h3>
+        <p>
+        	The <i>Endurance</i> drifts away from Antarctica for a total of 8 months. On October 27, 1915, the ship is so badly damaged that
+					the crew decides to abandon the ship and establish Ocean Camp on the sea ice. The photographer onboard, Frank Hurley, brought with him the
+					photographs included in this Story Map.
+        </p>
+    </section>
+    <section id="sink">
+        <h3>The <i>Endurance</i> sinks</h3>
+        <p>
+          On November 21, 1915, the <i>Endurance</i> is so badly damaged that it finally sinks. With the words, "She's going, boys!" Shackleton and the crew bids the boat farewell.
+					Captain Frank Worsley recorded in the ship log that <i>Endurance</i> sank at 68° 39′ 30" S, 52° 26′ 30" W. The uncertainties and errors that went into this calculation will
+					be discussed later.
+
+        </p>
+    </section>
+    <section id="north_drift">
+        <h3>Drifting on ice</h3>
+        <p>
+            The crew drifts on ice floes from November 1915 to April 1916, hoping that they will carry them northwards.
+        </p>
+
+    </section>
+		<section id="towards_elephant">
+				<h3>Towards Elephant Island</h3>
+				<p>
+						On April 6, 1916, three lifeboats, <i>The James Caird</i>, <i>Stancomb Wills</i>, and <i>Dudley Docker</i> are launched
+						from the ice floes heading towards Elephant Island.
+				</p>
+
+		</section>
+		<section id="from_elephant">
+        <h3>Arriving at Elephant Island</h3>
+        <p>
+        	On April 15, 1916, three boats land on Elephant Island. The men finally stood on solid ground for the first time in 497 days. The crew then moved to Cape Wild two days later.
+        </p>
+
+    		</section>
+		<section id="to_south_georgia">
+				<h3>Navigating to South Georgia</h3>
+				<p>
+					On April 24, 1916, Shackleton decides to sail the <i>James Caird</i> back to the whaling station in South Georgia to find more rescue.
+				</p>
+
+		</section>
+
+</div>
+
+
+
+<script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZW1pbHllYyIsImEiOiJja3p6M3pvNTcwNmxmM2V0OHR5OGFvdXF0In0.ghMWgYGBVgl2V29aH2HU-A';
+
+	const map = new mapboxgl.Map({
+		container: 'map', // container ID
+		style: 'mapbox://styles/emilyec/cl12sn04p001n15qoax9bnlob', // custom style url from https://studio.mapbox.com/
+		center: [4, 3], // starting position longitude, latitude
+		zoom: 2.5, // starting zoom
+		//maxBounds: bounds
+		renderWorldCopies: false, // prevent multiple maps from appearing
+		attributionControl: false // enable custom attributon location
+});
+
+// attribute Norwegian Polar Institute
+
+	map.addControl(new mapboxgl.AttributionControl({
+			customAttribution: `Basemap provided <a href="https://www.npolar.no/quantarctica/#:~:text=Quantarctica%20is%20a%20collection%20of,visualize%2C%20and%20share%20Antarctic%20data." target="_blank"; style="color:#1f8ae0;">Quantarctica<br> Norweigan Polar Institute</i> `
+		}),'bottom-left');
+
+
+// add a navigation control in case the reader wants to reset the view
+
+map.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
+
+//create pop-up listener//
+map.on('mouseover', 'shackleton-route-points', (event) => {
+
+  // retrieves info if double-click on marker. distinguish from measure tool
+	//by making this a double instead of single click
+  const features = map.queryRenderedFeatures(event.point, {
+    layers: ['shackleton-route-points'] //my data layer
+  });
+  if (!features.length) {
+    return;
+  }
+  const feature = features[0];
+  console.log(feature);
+
+
+	map.on('mouseleave', 'route', function() {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+
+//set up pop-up boxes with collection notes
+const popup = new mapboxgl.Popup({ offset: [0, -15] })
+  .setLngLat(feature.geometry.coordinates)
+  .setHTML(
+    `<p style="color:#2A3A34"><b>Latitude:</b> ${feature.properties.Latitude}</p>
+    <p style="color:#2A3A34"><b>Longitude:</b> ${feature.properties.Longitude}</p>
+    <p style="color:#2A3A34"><b>Notes:</b> ${feature.properties.Notes}</p>`
+  )
+  .addTo(map);
+
+});
+
+const chapterKeys = ['initial', 'grytviken', 'first_ice', 'still_drift', 'stuck', 'abandon', 'sink', 'north_drift', 'towards_elephant', 'from_elephant', 'to_south_georgia'];
+
+//Story Navigating - the center coordinates are not lat long, but x,y positions on the canvas. They are manually adjusted, as are the speed, bearing, and pitch for each stop on the map
+const chapters = {
+		[chapterKeys[0]]: {
+				center: [4, 3],
+				zoom: 3.5,
+		},
+		[chapterKeys[1]]: {
+			center: [-22, 28],
+			zoom: 6,
+			speed: 0.2
+		},
+		[chapterKeys[2]]: {
+			center: [-15, 30],
+			zoom: 5,
+			speed: 0.2
+		},
+		[chapterKeys[3]]: {
+			duration: 6000,
+			center: [-9, 25],
+			bearing: 150,
+			zoom: 4,
+			pitch: 10,
+			speed: 0.2
+		},
+		[chapterKeys[4]]: {
+			bearing: 90,
+			center: [-6, 11],
+			zoom: 6,
+			pitch: 10,
+			speed: 0.2
+		},
+		[chapterKeys[5]]: {
+			bearing: 20,
+			center: [-14, 10.5],
+			zoom: 5.5,
+			pitch: 10,
+			speed: 0.2
+		},
+		[chapterKeys[6]]: {
+			bearing: 0,
+			center: [-17, 12.5],
+			zoom: 7,
+			pitch: 10,
+			speed: 0.2
+		},
+		[chapterKeys[7]]: {
+			bearing: -65,
+			center: [-19, 13],
+			zoom: 6,
+			pitch: 40,
+			speed: 0.1
+		},
+		[chapterKeys[8]]: {
+			bearing: -70,
+			center: [-23, 16.5],
+			zoom: 8,
+			pitch: 60,
+			speed: 0.2
+		},
+		[chapterKeys[9]]: {
+			bearing: 10,
+			center: [-23, 17],
+			zoom: 6,
+			pitch: 60,
+			speed: 0.1
+		},
+		[chapterKeys[10]]: {
+			bearing: 12,
+			center: [-23, 23.5],
+			zoom: 7,
+			pitch: 60,
+			speed: 0.2
+		}
+};
+
+let activeChapterName = 'initial';
+
+function setActiveChapter(chapterName) {
+		if (chapterName === activeChapterName) return;
+
+		document.getElementById(chapterName).classList.add('active');
+		document.getElementById(activeChapterName).classList.remove('active');
+
+		activeChapterName = chapterName;
+}
+
+function isElementOnScreen(id) {
+		const element = document.getElementById(id);
+		const bounds = element.getBoundingClientRect();
+		return bounds.top < window.innerHeight && bounds.bottom > 0;
+}
+
+function updateStyle() {
+	map.setPaintProperty('shackleton-route-points', 'circle-color', ['match', ['get', 'chapter'], activeChapterName, "#f600fa", "#bc3220"]);
+	map.setPaintProperty('shackleton-route-points', 'circle-radius', ['match', ['get', 'chapter'], activeChapterName, 8, 5]);
+}
+
+// On every scroll event, check which element is on screen
+window.onscroll = () => {
+		for (const chapterName in chapters) {
+				if (isElementOnScreen(chapterName)) {
+						setActiveChapter(chapterName);
+						updateStyle();
+						map.flyTo(chapters[chapterName]);
+						break;
+				}
+		}
+};
+
+
+</script>
+
+</body>
+</html>
