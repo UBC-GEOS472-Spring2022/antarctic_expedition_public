@@ -4,38 +4,27 @@
 This is where we will host our maps for final project. The submission can be found in our private repository.
 
 
-[Name of the map](https://github.com/UBC-GEOS472-Spring2022/antarctic_expedition_public/edit/main/README.md) ->inset link to map here
+[Coastline slider map](https://ubc-geos472-spring2022.github.io/antarctic_expedition_public/Coastline_slider.html)
 
-Can add anything [name of the link](https://jekyllrb.com/) ->insert link here
+<img src="coast_slider.PNG" width="500">
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+[Route map](https://ubc-geos472-spring2022.github.io/antarctic_expedition_public/endurance_route_scroll.html)
 
-# Header 1
-## Header 2
-### Header 3
+<img src="route.PNG" width="500">
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+[3D visualization map](https://ubc-geos472-spring2022.github.io/antarctic_expedition_public/3D_visualization/rescue_route.html)
 
-**Bold** and _Italic_ and `Code` text
+<img src="3D.PNG" width="500">
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+[Uncertainty map](https://ubc-geos472-spring2022.github.io/antarctic_expedition_public/interaction_uncertain.htm;)
 
-### Jekyll Themes
+<img src="uncertainty.PNG" width="500">
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/UBC-GEOS472-Spring2022/antarctic_expedition_public/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+[Alguhas map](https://ubc-geos472-spring2022.github.io/antarctic_expedition_public/Agulhas_route.html)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<img src="Agulhas.PNG" width="500">
